@@ -1,0 +1,12 @@
+name: misslimsharing
+services:
+- name: web
+  github:
+    branch: main
+    repo: programmer999999999/misslimsharing
+  build_command: composer install --no-dev
+  envs:
+  - key: APP_ENV
+    value: production
+  http_port: 8080
+  source_dir: /
